@@ -66,7 +66,7 @@ python decrypt.py encryption-key/encryption_key.txt my_file.encrypted
 bash
 python verify_integrity.py my_file.txt my_file.encrypted
 
-If the integrity check is successful, you'll see a message indicating that the file integrity has been verified.
+If the integrity check is successful, you'll see a message indicating that the file integrity has been verified as well as also print out the hashing values that matched.
 Security Considerations
 
     Keep the encryption key (encryption_key.txt) secure. Without it, you won't be able to decrypt your files.
