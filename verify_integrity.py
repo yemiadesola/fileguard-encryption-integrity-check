@@ -21,15 +21,15 @@ if len(sys.argv) != 2 and len(sys.argv) != 3:
 if len(sys.argv) == 2:
     # Directory path provided
     directory = sys.argv[1]
-    original_file = os.path.join(directory, "textme.txt")
-    decrypted_file = os.path.join(directory, "textme.encrypted")
+    original_file = os.path.join(directory, "filename")
+    decrypted_file = os.path.join(directory, "filename")
 else:
     # Individual file paths provided
     original_file = sys.argv[1]
     decrypted_file = sys.argv[2]
 
 # Load the original hash saved during encryption
-with open("/home/kali/Documents/encypt-decrypt/encryption-key/original_file_hash.txt", "r") as hash_file:
+with open("/path-to-hash/", "r") as hash_file:
     original_hash = hash_file.read()
 
 # Calculate the hash of the decrypted file
